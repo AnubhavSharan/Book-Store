@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
     res.send("Welocome to my book store!!!!!");
 
 });
-// Get a specific book
+// Get all information
 app.get('/Books', async (req,res)=> {
     try{
         const data = await Books.find();
